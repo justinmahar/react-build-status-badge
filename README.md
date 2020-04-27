@@ -20,13 +20,13 @@
 
 Read the **[official documentation](https://devboldly.github.io/react-build-status-badge/)**.
 
-<a href="https://devboldly.github.io/react-build-status-badge/BuildStatusBadge#using-markdown-image-link"><img src="./src/__docz__/images/demo.gif" /></a>
+<a href="https://devboldly.github.io/react-build-status-badge/BuildStatusBadge#using-markdown-image-link"><img src={demoGif} /></a>
 
 👁️ **[Live Demo](https://devboldly.github.io/react-build-status-badge/BuildStatusBadge#using-markdown-image-link)**
 
 ## Overview
 
-[BuildStatusBadge](https://react-build-status-badge.netlify.com/BuildStatusBadge) is a React component that allows you to put a real-time build status badge on your site.
+[BuildStatusBadge](https://devboldly.github.io/react-build-status-badge/BuildStatusBadge) is a React component that allows you to put a real-time build status badge on your site.
 
 The badge automatically updates as the status changes—no clearing the cache or refreshing the page required.
 
@@ -34,7 +34,7 @@ Just paste in your status badge Markdown and you're ready to go. Additional opti
 
 ### Features include:
 
-- **📜 Supports Markdown links**
+- **📜 Supports Markdown links. Just paste and go.**
   - Use the Markdown link from your CI/CD service for dead simple setup.
 - **🔄 Automatic reloading for real-time status**
   - Badge reloads automatically so the status stays current. No page refresh required.
@@ -55,13 +55,17 @@ import { BuildStatusBadge } from 'devboldly@react-build-status-badge';
 
 The easiest way is to simply paste in your badge Markdown image link, like so:
 
-```jsx
-<BuildStatusBadge>
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
-</BuildStatusBadge>
-```
+<Playground>
+  <BuildStatusBadge>
+    [![Deploy Status](https://github.com/devboldly/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ADeploy)
+  </BuildStatusBadge>
+</Playground>
 
-See the [BuildStatusBadge docs](https://react-build-status-badge.netlify.com/BuildStatusBadge) for additional methods and options.
+<small>Note: You can edit the source above. Your changes will be rendered immediately.</small>
+
+<br/><br/>
+
+See the [BuildStatusBadge docs](https://devboldly.github.io/react-build-status-badge/BuildStatusBadge) for additional methods and options.
 
 ## TypeScript
 
