@@ -1,4 +1,15 @@
 "use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -9,6 +20,17 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var react_timed_image_1 = require("@devboldly/react-timed-image");
+/**
+ * See the documentation: https://devboldly.github.io/react-build-status-badge/
+ *
+ * A BuildStatusBadge is a React component that allows you to include a real-time build status badge on your site.
+ *
+ * Just paste in your status badge Markdown and you're ready to go.
+ *
+ * It features automatic reloading (every 5 seconds by default) and uses query param cache busting to prevent client-side caching. This means your badge automatically updates on the page in real-time as the status changes—no clearing the cache or refreshing the page required.
+ *
+ * See the props section for more options.
+ */
 function BuildStatusBadge(props) {
     var href = props.href;
     var src = props.src;
@@ -41,15 +63,20 @@ function BuildStatusBadge(props) {
             }
         }
     }
-    var useLink = (typeof props.useLink === 'undefined' || (typeof props.useLink !== 'undefined' && props.useLink)) &&
-        typeof href !== 'undefined';
-    console.log('useLink:', useLink);
-    var imageElement = typeof props.timed === 'undefined' || props.timed ? (React.createElement(react_timed_image_1.TimedImage, { interval: props.interval, src: src, alt: alt })) : (React.createElement("img", { src: src, alt: alt }));
+    var useLink = !props.linkDisabled && typeof href !== 'undefined';
+    var imageElement = !props.reloadDisabled ? (React.createElement(react_timed_image_1.TimedImage, { interval: typeof props.interval === 'number' && props.interval > 0 ? Math.abs(props.interval) : 5000, src: src, alt: alt })) : (React.createElement("img", { src: src, alt: alt }));
     if (useLink) {
-        return React.createElement("a", { href: href }, imageElement);
+        var newWindowProps = props.openInNewWindow ? { target: '_blank', rel: 'noopener noreferrer' } : {};
+        return (React.createElement("a", __assign({ href: href }, newWindowProps), imageElement));
     }
     else {
         return imageElement;
     }
 }
 exports.BuildStatusBadge = BuildStatusBadge;
+BuildStatusBadge.defaultProps = {
+    interval: 5000,
+    reloadDisabled: false,
+    linkDisabled: false,
+    openInNewWindow: false,
+};
