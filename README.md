@@ -20,7 +20,7 @@
 
 Read the **[official documentation](https://devboldly.github.io/react-build-status-badge/)**.
 
-<a href="https://devboldly.github.io/react-build-status-badge/BuildStatusBadge#using-markdown-image-link"><img src={demoGif} /></a>
+<a href="https://devboldly.github.io/react-build-status-badge/BuildStatusBadge#using-markdown-image-link"><img src="./src/__docz__/images/demo.gif" /></a>
 
 👁️ **[Live Demo](https://devboldly.github.io/react-build-status-badge/BuildStatusBadge#using-markdown-image-link)**
 
@@ -50,20 +50,16 @@ npm i react-build-status-badge
 ## Quick Start
 
 ```jsx
-import { BuildStatusBadge } from 'devboldly@react-build-status-badge';
+import { BuildStatusBadge } from 'react-build-status-badge';
 ```
 
 The easiest way is to simply paste in your badge Markdown image link, like so:
 
-<Playground>
-  <BuildStatusBadge>
-    [![Deploy Status](https://github.com/devboldly/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ADeploy)
-  </BuildStatusBadge>
-</Playground>
-
-<small>Note: You can edit the source above. Your changes will be rendered immediately.</small>
-
-<br/><br/>
+```jsx
+<BuildStatusBadge>
+  [![Deploy Status](https://github.com/devboldly/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ADeploy)
+</BuildStatusBadge>
+```
 
 See the [BuildStatusBadge docs](https://devboldly.github.io/react-build-status-badge/BuildStatusBadge) for additional methods and options.
 
