@@ -5,8 +5,8 @@
   React build status badge component for any CI/CD service.<br/>Shows real-time status and supports Markdown for easy setup.
 </h3>
 <p align="center">
-  <a href="https://badge.fury.io/js/%40devboldly%2Freact-build-status-badge">
-    <img src="https://badge.fury.io/js/%40devboldly%2Freact-build-status-badge.svg" alt="npm Version"/>
+  <a href="https://badge.fury.io/js/react-build-status-badge">
+    <img src="https://badge.fury.io/js/react-build-status-badge.svg" alt="npm Version"/>
   </a>
   <a href="https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ATests">
     <img src="https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg" alt="Tests Status"/>
@@ -44,7 +44,7 @@ Just paste in your status badge Markdown and you're ready to go. Additional opti
 ## Installation
 
 ```
-npm i @devboldly/react-build-status-badge
+npm i react-build-status-badge
 ```
 
 ## Quick Start

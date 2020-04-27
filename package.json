@@ -1,5 +1,5 @@
 {
-  "name": "@devboldly/react-build-status-badge",
+  "name": "react-build-status-badge",
   "version": "1.0.1",
   "author": "Dev Boldly <devboldly@gmail.com>",
   "description": "React build status badge component for any CI/CD service. Shows real-time status and supports Markdown for easy setup.",
