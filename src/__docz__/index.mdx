@@ -10,51 +10,71 @@ import { Playground } from 'docz';
 
 import { SvgIcon } from '@devboldly/react-devboldly-tools';
 import githubSvg from '../__docz__/images/github.svg';
+import demoGif from '../__docz__/images/demo.gif';
+import { BuildStatusBadge } from '../components/BuildStatusBadge';
 
 <div style={{
 	display: 'flex',
 	alignItems: 'center',
 }}>
   <div>
-    <h1>React Library Starter</h1>
+    <h1>React Build Status Badge</h1>
   </div>
   <div>
-    <a href="https://github.com/devboldly/react-library-starter" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/devboldly/react-build-status-badge/" target="_blank" rel="noopener noreferrer">
       <SvgIcon src={githubSvg} size={28} style={{ margin: '0 0 0 20px' }} />
     </a>
   </div>
 </div>
 
-**This header will contain a brief description of the project.**
+**React build status badge component for any CI/CD service. Shows real-time status and supports Markdown for easy setup.**
 
-👁️ **[Live Demo](/ExampleComponent#example)**
+<a href="/BuildStatusBadge#using-markdown-image-link"><img src={demoGif} /></a>
+
+👁️ **[Live Demo](/BuildStatusBadge#using-markdown-image-link)**
 
 ## Overview
 
-This section will contain an overview so people can have a high-level understanding of the project.
+[BuildStatusBadge](/BuildStatusBadge) is a React component that allows you to put a real-time build status badge on your site.
+
+The badge automatically updates as the status changes—no clearing the cache or refreshing the page required.
+
+Just paste in your status badge Markdown and you're ready to go. Additional options are available.
 
 ### Features include:
 
-- **🚀 List your features, use fun [emojis](https://emojipedia.org/search/?q=rocket)**
-  - Give a little more info on each feature or mention benefits.
+- **📜 Supports Markdown links. Just paste and go.**
+  - Use the Markdown link from your CI/CD service for dead simple setup.
+- **🔄 Automatic reloading for real-time status**
+  - Badge reloads automatically so the status stays current. No page refresh required.
+- **🐣 New badge every time using cache-busting**
+  - Uses client-side cache-busting to prevent old, cached build status badges from being shown.
 
 ## Installation
 
 ```
-npm i @devboldly/react-library-starter
+npm i @devboldly/react-build-status-badge
 ```
 
 ## Quick Start
 
-This section will contain a copy/paste example so people can get started quickly.
-
 ```jsx
-import { ExampleComponent } from '@devboldly/react-library-starter';
+import { BuildStatusBadge } from 'devboldly@react-build-status-badge';
 ```
 
-```jsx
-<ExampleComponent text="Example Component"/>
-```
+The easiest way is to simply paste in your badge Markdown image link, like so:
+
+<Playground>
+  <BuildStatusBadge>
+    [![Deploy Status](https://github.com/devboldly/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ADeploy)
+  </BuildStatusBadge>
+</Playground>
+
+<small>Note: You can edit the source above. Your changes will be rendered immediately.</small>
+
+<br/><br/>
+
+See the [BuildStatusBadge docs](/BuildStatusBadge) for additional methods and options.
 
 ## TypeScript
 
@@ -68,6 +88,6 @@ For major changes, open an issue first to discuss what you'd like to change.
 
 See the [library template](https://tinyurl.com/ya3k258d) for npm script documentation.
 
-## ⭐ Found It Helpful? [Star It!](https://github.com/devboldly/react-library-starter/stargazers)
+## ⭐ Found It Helpful? [Star It!](https://github.com/devboldly/react-build-status-badge/stargazers)
 
-If you found this project helpful, let the community know by giving it a [star](https://github.com/devboldly/react-library-starter/stargazers): [👉⭐](https://github.com/devboldly/react-library-starter/stargazers)
+If you found this project helpful, let the community know by giving it a [star](https://github.com/devboldly/react-build-status-badge/stargazers): [👉⭐](https://github.com/devboldly/react-build-status-badge/stargazers)
