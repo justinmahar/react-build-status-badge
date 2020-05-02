@@ -1,7 +1,7 @@
 {
   "name": "react-build-status-badge",
   "version": "1.0.2",
-  "author": "Dev Boldly <devboldly@gmail.com>",
+  "author": "DevBoldly <devboldly@gmail.com>",
   "description": "React build status badge component for any CI/CD service. Shows real-time status and supports Markdown for easy setup.",
   "homepage": "https://github.com/devboldly/react-build-status-badge#readme",
   "main": "./dist/index.js",
@@ -70,6 +70,7 @@
     "react-ga": "^2.7.0",
     "react-helmet": "^6.0.0",
     "react-test-renderer": "^16.13.0",
+    "react-use-window-scroll": "^1.0.8",
     "ts-jest": "^25.2.1",
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.3"
