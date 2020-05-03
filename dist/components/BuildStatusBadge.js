@@ -19,9 +19,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
-var react_timed_image_1 = require("@devboldly/react-timed-image");
+var react_timed_image_1 = require("react-timed-image");
 /**
- * See the documentation: https://devboldly.github.io/react-build-status-badge/
+ * See the documentation: [BuildStatusBadge](https://devboldly.github.io/react-build-status-badge/)
  *
  * A BuildStatusBadge is a React component that allows you to include a real-time build status badge on your site.
  *
