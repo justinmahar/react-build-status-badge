@@ -1,6 +1,6 @@
 {
   "name": "react-build-status-badge",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "DevBoldly <devboldly@gmail.com>",
   "description": "React build status badge component for any CI/CD service. Shows real-time status and supports Markdown for easy setup.",
   "homepage": "https://github.com/devboldly/react-build-status-badge#readme",
