@@ -35,7 +35,7 @@
   },
   "keywords": [],
   "dependencies": {
-    "@devboldly/react-timed-image": "0.0.1"
+    "react-timed-image": "^1.0.3"
   },
   "peerDependencies": {
     "react": "^16.13.0",

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { TimedImage } from '@devboldly/react-timed-image';
+import { TimedImage } from 'react-timed-image';
 
 export interface BuildStatusBadgeProps {
   /** The link for the badge. Will be overridden if a Markdown link is provided in `children`. */
