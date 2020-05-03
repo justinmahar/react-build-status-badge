@@ -16,7 +16,7 @@
   </a>
 </p>
 
-## Documentation
+## Documentation 
 
 Read the **[official documentation](https://devboldly.github.io/react-build-status-badge/)**.
 
