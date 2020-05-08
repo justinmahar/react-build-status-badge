@@ -14,11 +14,11 @@ export default {
 export const MarkdownImageStory = () => (
   <>
     <BuildStatusBadge>
-      ![Node.js CI](https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg)
+      ![Tests](https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg)
     </BuildStatusBadge>
     <p>Updates every 5 seconds (default).</p>
     <pre>{`<BuildStatusBadge>
-  ![Node.js CI](https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg)
+  ![Tests](https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg)
 </BuildStatusBadge>
 `}</pre>
   </>
@@ -30,12 +30,11 @@ MarkdownImageStory.story = {
 export const MarkdownLinkStory = () => (
   <>
     <BuildStatusBadge interval={3000}>
-      [![Netlify
-      Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
+      [![Tests](https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg)](https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ATests)
     </BuildStatusBadge>
     <p>Updates every 3 seconds.</p>
     <pre>{`<BuildStatusBadge interval={3000}>
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
+  [![Tests](https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg)](https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ATests)
 </BuildStatusBadge>
 `}</pre>
   </>
@@ -47,15 +46,15 @@ MarkdownLinkStory.story = {
 export const UsingPropsStory = () => (
   <>
     <BuildStatusBadge
-      href="https://github.com/devboldly/react-build-status-badge/actions"
-      src="https://github.com/devboldly/react-build-status-badge/workflows/Node.js%20CI/badge.svg"
-      alt="Build Status"
+      href="https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ATests"
+      src="https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg"
+      alt="Tests"
     />
     <p>Updates every 5 seconds (default).</p>
     <pre>{`<BuildStatusBadge
-  href="https://github.com/devboldly/react-build-status-badge/actions"
-  src="https://github.com/devboldly/react-build-status-badge/workflows/Node.js%20CI/badge.svg"
-  alt="Build Status"
+  href="https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ATests"
+  src="https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg"
+  alt="Tests"
 />
 `}</pre>
   </>
