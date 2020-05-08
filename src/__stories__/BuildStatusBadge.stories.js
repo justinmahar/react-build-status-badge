@@ -14,11 +14,11 @@ export default {
 export const MarkdownImageStory = () => (
   <>
     <BuildStatusBadge>
-      ![Node.js CI](https://github.com/devboldly/react-build-status-badge/workflows/Node.js%20CI/badge.svg)
+      ![Node.js CI](https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg)
     </BuildStatusBadge>
     <p>Updates every 5 seconds (default).</p>
     <pre>{`<BuildStatusBadge>
-  ![Node.js CI](https://github.com/devboldly/react-build-status-badge/workflows/Node.js%20CI/badge.svg)
+  ![Node.js CI](https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg)
 </BuildStatusBadge>
 `}</pre>
   </>
