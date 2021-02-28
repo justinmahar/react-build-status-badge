@@ -18,7 +18,7 @@ export interface BuildStatusBadgeProps {
     openInNewWindow?: boolean;
 }
 /**
- * See the documentation: [BuildStatusBadge](https://devboldly.github.io/react-build-status-badge/)
+ * See the documentation: [BuildStatusBadge](https://justinmahar.github.io/react-build-status-badge/)
  *
  * A BuildStatusBadge is a React component that allows you to include a real-time build status badge on your site.
  *

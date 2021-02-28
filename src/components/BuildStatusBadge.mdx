@@ -4,8 +4,8 @@ route: /BuildStatusBadge
 # menu: Components
 ---
 
-import { Playground, Props } from 'docz';
-import { BuildStatusBadge } from './BuildStatusBadge';
+import { Playground, Props } from "docz";
+import { BuildStatusBadge } from "./BuildStatusBadge";
 
 <h1>BuildStatusBadge</h1>
 
@@ -20,7 +20,7 @@ Just paste in your status badge Markdown and you're ready to go. Additional opti
 ## Usage
 
 ```jsx
-import { BuildStatusBadge } from 'react-build-status-badge';
+import { BuildStatusBadge } from "react-build-status-badge";
 ```
 
 You can use a Markdown image link as the child, or can specify the image and link via props.
@@ -31,15 +31,18 @@ The easiest way is to simply paste in your badge Markdown image link, like so:
 
 <Playground>
   <BuildStatusBadge>
-    [![Deploy Status](https://github.com/devboldly/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ADeploy)
+    [![Deploy
+    Status](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ADeploy)
   </BuildStatusBadge>
 </Playground>
+<small>
+  Note: You can edit the source above. Your changes will be rendered
+  immediately.
+</small>
+<br />
+<br />
 
-<small>Note: You can edit the source above. Your changes will be rendered immediately.</small>
-
-<br/><br/>
-
-*Tip: Try pasting in your own badge Markdown above to see it in action.*
+_Tip: Try pasting in your own badge Markdown above to see it in action._
 
 ### Using Markdown Image Only (No Link)
 
@@ -47,20 +50,22 @@ You can also use a Markdown image with no link:
 
 <Playground>
   <BuildStatusBadge>
-    ![Tests](https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg)
+    ![Tests](https://github.com/justinmahar/react-build-status-badge/workflows/Tests/badge.svg)
   </BuildStatusBadge>
 </Playground>
+<small>
+  Note: You can edit the source above. Your changes will be rendered
+  immediately.
+</small>
 
-<small>Note: You can edit the source above. Your changes will be rendered immediately.</small>
-
-### Using Props 
+### Using Props
 
 Or you can specify everything manually using props:
 
 ```jsx
 <BuildStatusBadge
-  href="https://github.com/devboldly/react-build-status-badge/actions"
-  src="https://github.com/devboldly/react-build-status-badge/workflows/Node.js%20CI/badge.svg"
+  href="https://github.com/justinmahar/react-build-status-badge/actions"
+  src="https://github.com/justinmahar/react-build-status-badge/workflows/Node.js%20CI/badge.svg"
   alt="Build Status"
 />
 ```
@@ -79,7 +84,8 @@ To have the `href`, `src`, and `alt` props configured automatically, provide a s
 
 ```jsx
 <BuildStatusBadge>
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
+  [![Netlify
+  Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
 </BuildStatusBadge>
 ```
 
@@ -93,7 +99,8 @@ You may want to vary how often the badge is updated. You can specify the `interv
 
 ```jsx
 <BuildStatusBadge interval={3000}>
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
+  [![Netlify
+  Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
 </BuildStatusBadge>
 ```
 
@@ -107,7 +114,8 @@ To load and cache the badge only once and disable automatic reloading, use the `
 
 ```jsx
 <BuildStatusBadge reloadDisabled>
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
+  [![Netlify
+  Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
 </BuildStatusBadge>
 ```
 
@@ -121,7 +129,8 @@ If you're including a link (for instance in your Markdown) but want to disable r
 
 ```jsx
 <BuildStatusBadge linkDisabled>
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
+  [![Netlify
+  Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
 </BuildStatusBadge>
 ```
 
@@ -135,6 +144,7 @@ When doing so, the link will use the `target="_blank"` and `rel="noopener norefe
 
 ```jsx
 <BuildStatusBadge openInNewWindow>
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
+  [![Netlify
+  Status](https://api.netlify.com/api/v1/badges/44e95c68-aa57-4b31-96f3-22877af7a73b/deploy-status)](https://app.netlify.com/sites/react-build-status-badge/deploys)
 </BuildStatusBadge>
 ```

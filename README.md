@@ -1,5 +1,5 @@
 <h2 align="center">
-  <a href="https://github.com/devboldly/react-build-status-badge">React Build Status Badge</a>
+  <a href="https://github.com/justinmahar/react-build-status-badge">React Build Status Badge</a>
 </h2>
 <h3 align="center">
   React build status badge component for any CI/CD service.<br/>Shows real-time status and supports Markdown for easy setup.
@@ -8,25 +8,25 @@
   <a href="https://badge.fury.io/js/react-build-status-badge">
     <img src="https://badge.fury.io/js/react-build-status-badge.svg" alt="npm Version"/>
   </a>
-  <a href="https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ATests">
-    <img src="https://github.com/devboldly/react-build-status-badge/workflows/Tests/badge.svg" alt="Tests Status"/>
+  <a href="https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ATests">
+    <img src="https://github.com/justinmahar/react-build-status-badge/workflows/Tests/badge.svg" alt="Tests Status"/>
   </a>
-  <a href="https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ADeploy">
-    <img src="https://github.com/devboldly/react-build-status-badge/workflows/Deploy/badge.svg" alt="Deploy Status"/>
+  <a href="https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ADeploy">
+    <img src="https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg" alt="Deploy Status"/>
   </a>
 </p>
 
-## Documentation 
+## Documentation
 
-Read the **[official documentation](https://devboldly.github.io/react-build-status-badge/)**.
+Read the **[official documentation](https://justinmahar.github.io/react-build-status-badge/)**.
 
-<a href="https://devboldly.github.io/react-build-status-badge/BuildStatusBadge#using-markdown-image-link"><img src="./src/__docz__/images/demo.gif" /></a>
+<a href="https://justinmahar.github.io/react-build-status-badge/BuildStatusBadge#using-markdown-image-link"><img src="./src/__docz__/images/demo.gif" /></a>
 
-👁️ **[Live Demo](https://devboldly.github.io/react-build-status-badge/BuildStatusBadge#using-markdown-image-link)**
+👁️ **[Live Demo](https://justinmahar.github.io/react-build-status-badge/BuildStatusBadge#using-markdown-image-link)**
 
 ## Overview
 
-[BuildStatusBadge](https://devboldly.github.io/react-build-status-badge/BuildStatusBadge) is a React component that allows you to put a real-time build status badge on your site.
+[BuildStatusBadge](https://justinmahar.github.io/react-build-status-badge/BuildStatusBadge) is a React component that allows you to put a real-time build status badge on your site.
 
 The badge automatically updates as the status changes—no clearing the cache or refreshing the page required.
 
@@ -50,18 +50,19 @@ npm i react-build-status-badge
 ## Quick Start
 
 ```jsx
-import { BuildStatusBadge } from 'react-build-status-badge';
+import { BuildStatusBadge } from "react-build-status-badge";
 ```
 
 The easiest way is to simply paste in your badge Markdown image link, like so:
 
 ```jsx
 <BuildStatusBadge>
-  [![Deploy Status](https://github.com/devboldly/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/devboldly/react-build-status-badge/actions?query=workflow%3ADeploy)
+  [![Deploy
+  Status](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ADeploy)
 </BuildStatusBadge>
 ```
 
-See the [BuildStatusBadge docs](https://devboldly.github.io/react-build-status-badge/BuildStatusBadge) for additional methods and options.
+See the [BuildStatusBadge docs](https://justinmahar.github.io/react-build-status-badge/BuildStatusBadge) for additional methods and options.
 
 ## TypeScript
 
@@ -81,14 +82,14 @@ For major changes, open an issue first to discuss what you'd like to change.
 
 See [Kindling](https://tinyurl.com/kindlingscripts) for npm script documentation.
 
-## ⭐ Found It Helpful? [Star It!](https://github.com/devboldly/react-build-status-badge/stargazers)
+## ⭐ Found It Helpful? [Star It!](https://github.com/justinmahar/react-build-status-badge/stargazers)
 
-If you found this project helpful, let the community know by giving it a [star](https://github.com/devboldly/react-build-status-badge/stargazers): [👉⭐](https://github.com/devboldly/react-build-status-badge/stargazers)
+If you found this project helpful, let the community know by giving it a [star](https://github.com/justinmahar/react-build-status-badge/stargazers): [👉⭐](https://github.com/justinmahar/react-build-status-badge/stargazers)
 
 ## MIT License
 
 ```
-Copyright © 2020 DevBoldly https://devboldly.com
+Copyright © 2020 Justin Mahar https://github.com/justinmahar
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

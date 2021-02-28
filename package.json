@@ -1,9 +1,9 @@
 {
   "name": "react-build-status-badge",
   "version": "1.0.6",
-  "author": "DevBoldly <devboldly@gmail.com>",
+  "author": "Justin Mahar <contact@justinmahar.com>",
   "description": "React build status badge component for any CI/CD service. Shows real-time status and supports Markdown for easy setup.",
-  "homepage": "https://devboldly.github.io/react-build-status-badge/",
+  "homepage": "https://justinmahar.github.io/react-build-status-badge/",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -28,10 +28,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devboldly/react-build-status-badge.git"
+    "url": "git+https://github.com/justinmahar/react-build-status-badge.git"
   },
   "bugs": {
-    "url": "https://github.com/devboldly/react-build-status-badge/issues"
+    "url": "https://github.com/justinmahar/react-build-status-badge/issues"
   },
   "keywords": [],
   "dependencies": {
