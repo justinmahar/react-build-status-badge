@@ -1,5 +1,5 @@
-import * as React from "react";
-import { TimedImage } from "react-timed-image";
+import * as React from 'react';
+import { TimedImage } from 'react-timed-image';
 
 export interface BuildStatusBadgeProps {
   /** The link for the badge. Will be overridden if a Markdown link is provided in `children`. */
@@ -36,7 +36,7 @@ export function BuildStatusBadge(props: BuildStatusBadgeProps): JSX.Element {
   let src = props.src;
   let alt = props.alt;
 
-  if (typeof props.children === "string") {
+  if (typeof props.children === 'string') {
     // Regex matches on: [![alt](src)](href)
     // It looks more complicated that it is, because there's so much [] and () escaping needed.
     // Groups are named by putting ?<name> immediately after the opening paren.
@@ -64,15 +64,11 @@ export function BuildStatusBadge(props: BuildStatusBadgeProps): JSX.Element {
     }
   }
 
-  const useLink = !props.linkDisabled && typeof href !== "undefined";
+  const useLink = !props.linkDisabled && typeof href !== 'undefined';
 
   const imageElement = !props.reloadDisabled ? (
     <TimedImage
-      interval={
-        typeof props.interval === "number" && props.interval > 0
-          ? Math.abs(props.interval)
-          : 5000
-      }
+      interval={typeof props.interval === 'number' && props.interval > 0 ? Math.abs(props.interval) : 5000}
       src={src}
       alt={alt}
     />
@@ -81,9 +77,7 @@ export function BuildStatusBadge(props: BuildStatusBadgeProps): JSX.Element {
   );
 
   if (useLink) {
-    const newWindowProps = props.openInNewWindow
-      ? { target: "_blank", rel: "noopener noreferrer" }
-      : {};
+    const newWindowProps = props.openInNewWindow ? { target: '_blank', rel: 'noopener noreferrer' } : {};
     return (
       <a href={href} {...newWindowProps}>
         {imageElement}

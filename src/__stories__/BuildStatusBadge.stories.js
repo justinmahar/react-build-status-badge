@@ -1,12 +1,12 @@
-import React from "react";
-import { BuildStatusBadge } from "../components/BuildStatusBadge";
+import React from 'react';
+import { BuildStatusBadge } from '../components/BuildStatusBadge';
 
 // A Storybook is a collection of stories. Each story represents a single visual state of a component.
 // Technically, a story is a function that returns something that can be rendered to screen.
 
 // The default export defines metadata that applies to the group.
 export default {
-  title: "BuildStatusBadge",
+  title: 'BuildStatusBadge',
   component: BuildStatusBadge,
 };
 
@@ -24,7 +24,7 @@ export const MarkdownImageStory = () => (
   </>
 );
 MarkdownImageStory.story = {
-  name: "Using Markdown Image (No Link)",
+  name: 'Using Markdown Image (No Link)',
 };
 
 export const MarkdownLinkStory = () => (
@@ -40,7 +40,7 @@ export const MarkdownLinkStory = () => (
   </>
 );
 MarkdownLinkStory.story = {
-  name: "Using Markdown Link",
+  name: 'Using Markdown Link',
 };
 
 export const UsingPropsStory = () => (
@@ -60,5 +60,5 @@ export const UsingPropsStory = () => (
   </>
 );
 UsingPropsStory.story = {
-  name: "Using Props",
+  name: 'Using Props',
 };
