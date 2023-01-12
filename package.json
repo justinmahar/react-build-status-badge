@@ -1,6 +1,7 @@
 {
   "name": "react-build-status-badge",
   "version": "1.1.1",
+  "coreVersion": "2.4.9",
   "author": "Justin Mahar <contact@justinmahar.com>",
   "description": "React build status badge component for any CI/CD service. Shows real-time status and supports Markdown for easy setup.",
   "homepage": "https://justinmahar.github.io/react-build-status-badge/",
@@ -79,6 +80,5 @@
     "replace-in-file": "^6.3.5",
     "typescript": "^4.9.4",
     "webpack": "^5.75.0"
-  },
-  "coreVersion": "2.4.9"
+  }
 }
