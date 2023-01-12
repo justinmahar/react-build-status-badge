@@ -29,7 +29,7 @@ export interface BuildStatusBadgeProps {
  *
  * It features automatic reloading (every 5 seconds by default) and uses query param cache busting to prevent client-side caching. This means your badge automatically updates on the page in real-time as the status changes—no clearing the cache or refreshing the page required.
  *
- * See the props section for more options.
+ * See the [props section](https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--page#props) for more options.
  */
 export function BuildStatusBadge(props: BuildStatusBadgeProps): JSX.Element {
   let href = props.href;

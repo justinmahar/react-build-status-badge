@@ -1,1 +1,1 @@
-export * from './components/BuildStatusBadge';
+export * from './components/Example';

@@ -1,11 +1,7 @@
----
-name: BuildStatusBadge
-route: /BuildStatusBadge
-# menu: Components
----
+import { Meta } from '@storybook/addon-docs';
+import { BuildStatusBadge } from '../components/BuildStatusBadge';
 
-import { Playground, Props } from "docz";
-import { BuildStatusBadge } from "./BuildStatusBadge";
+<Meta title="Components/BuildStatusBadge" />
 
 <h1>BuildStatusBadge</h1>
 
@@ -20,7 +16,7 @@ Just paste in your status badge Markdown and you're ready to go. Additional opti
 ## Usage
 
 ```jsx
-import { BuildStatusBadge } from "react-build-status-badge";
+import { BuildStatusBadge } from 'react-build-status-badge';
 ```
 
 You can use a Markdown image link as the child, or can specify the image and link via props.
@@ -29,37 +25,27 @@ You can use a Markdown image link as the child, or can specify the image and lin
 
 The easiest way is to simply paste in your badge Markdown image link, like so:
 
-<Playground>
-  <BuildStatusBadge>
-    [![Deploy
-    Status](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ADeploy)
-  </BuildStatusBadge>
-</Playground>
+```jsx
+<BuildStatusBadge>
+  [![Deploy
+  Status](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ADeploy)
+</BuildStatusBadge>
+```
 
-<small>
-  Note: You can edit the source above. Your changes will be rendered
-  immediately.
-</small>
-
-<br />
-<br />
-
-_Tip: Try pasting in your own badge Markdown above to see it in action._
+<BuildStatusBadge>
+  [![Deploy
+  Status](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ADeploy)
+</BuildStatusBadge>
 
 ### Using Markdown Image Only (No Link)
 
 You can also use a Markdown image with no link:
 
-<Playground>
-  <BuildStatusBadge>
-    ![Tests](https://github.com/justinmahar/react-build-status-badge/workflows/Tests/badge.svg)
-  </BuildStatusBadge>
-</Playground>
-
-<small>
-  Note: You can edit the source above. Your changes will be rendered
-  immediately.
-</small>
+```jsx
+<BuildStatusBadge>
+  ![Deploy](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)
+</BuildStatusBadge>
+```
 
 ### Using Props
 
@@ -68,18 +54,27 @@ Or you can specify everything manually using props:
 ```jsx
 <BuildStatusBadge
   href="https://github.com/justinmahar/react-build-status-badge/actions"
-  src="https://github.com/justinmahar/react-build-status-badge/workflows/Node.js%20CI/badge.svg"
+  src="https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg"
   alt="Build Status"
 />
 ```
 
-Note that if you use both Markdown and manual props, the Markdown will override any `href`, `src`, and `alt` props you manually specified.
+> Note: If you use both Markdown and manual props, the Markdown will override any `href`, `src`, and `alt` props you manually specified.
 
 ## Props
 
-<Props of={BuildStatusBadge} />
+| Prop              | Type              | Description                                                                                                                                           |
+| ----------------- | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `children`        | `React.ReactNode` | Provide a single Markdown string of either an image link, or just an image, to have the `href`, `src`, and `alt` props configured automatically.      |
+| `href`            | `string`          | The link for the badge. Will be overridden if a Markdown link is provided in `children`.                                                              |
+| `src`             | `string`          | The source for the badge image. Will be overridden if a Markdown image is provided in `children`.                                                     |
+| `alt`             | `string`          | Alt text for the badge image. Will be overridden if a Markdown alt is provided in `children`.                                                         |
+| `interval`        | `number`          | The number of milliseconds between reloads. Default is `5000`.                                                                                        |
+| `reloadDisabled`  | `boolean`         | Set to true to disable automatic reloading and cache-busting. Default is `false`.                                                                     |
+| `linkDisabled`    | `boolean`         | Set to true to disable rendering a link. Default is `false`.                                                                                          |
+| `openInNewWindow` | `boolean`         | Set to true to open the link in a new window. The link will use the `target="_blank"` and `rel="noopener noreferrer"` attributes. Default is `false`. |
 
-> Note: Expand each prop for more information.
+All props are optional.
 
 ### Markdown String Child
 
