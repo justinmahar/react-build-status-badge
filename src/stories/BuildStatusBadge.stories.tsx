@@ -1,68 +1,68 @@
-/*
- * More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
- * More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
- * More on args: https://storybook.js.org/docs/react/writing-stories/args
- * More on argTypes: https://storybook.js.org/docs/react/api/argtypes
- */
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import { BuildStatusBadge } from '../components/BuildStatusBadge';
+import React from 'react';
 
-export default {
-  title: 'Stories/BuildStatusBadge',
-  component: BuildStatusBadge,
-} as ComponentMeta<typeof BuildStatusBadge>;
+// === Setup ===
+const StoryComponent = BuildStatusBadge; // <-- Set to your component
+const meta: Meta<typeof StoryComponent> = {
+  title: 'Stories/BuildStatusBadge', // <-- Set to your story title
+  component: StoryComponent,
+  parameters: {
+    options: { showPanel: false }, // Don't show addons panel
+  },
+};
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-// The named exports define the stories
-export const MarkdownImageStory = () => (
-  <>
-    <BuildStatusBadge>
-      ![Tests](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)
-    </BuildStatusBadge>
-    <p>Updates every 5 seconds (default).</p>
-    <pre>{`<BuildStatusBadge>
+// === Stories ===
+export const MarkdownImageStory: Story = {
+  name: 'Using Markdown Image (No Link)',
+  render: () => (
+    <>
+      <BuildStatusBadge>
+        ![Tests](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)
+      </BuildStatusBadge>
+      <p>Updates every 5 seconds (default).</p>
+      <pre>{`<BuildStatusBadge>
   ![Tests](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)
 </BuildStatusBadge>
-`}</pre>
-  </>
-);
-MarkdownImageStory.story = {
-  name: 'Using Markdown Image (No Link)',
+  `}</pre>
+    </>
+  ),
 };
 
-export const MarkdownLinkStory = () => (
-  <>
-    <BuildStatusBadge interval={3000}>
-      [![Tests](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ATests)
-    </BuildStatusBadge>
-    <p>Updates every 3 seconds.</p>
-    <pre>{`<BuildStatusBadge interval={3000}>
+export const MarkdownLinkStory: Story = {
+  name: 'Using Markdown Link',
+  render: () => (
+    <>
+      <BuildStatusBadge interval={3000}>
+        [![Tests](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ATests)
+      </BuildStatusBadge>
+      <p>Updates every 3 seconds.</p>
+      <pre>{`<BuildStatusBadge interval={3000}>
   [![Tests](https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg)](https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ATests)
 </BuildStatusBadge>
-`}</pre>
-  </>
-);
-MarkdownLinkStory.story = {
-  name: 'Using Markdown Link',
+  `}</pre>
+    </>
+  ),
 };
 
-export const UsingPropsStory = () => (
-  <>
-    <BuildStatusBadge
-      href="https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ATests"
-      src="https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg"
-      alt="Deploy"
-    />
-    <p>Updates every 5 seconds (default).</p>
-    <pre>{`<BuildStatusBadge
+export const UsingPropsStory: Story = {
+  name: 'Using Props',
+  render: () => (
+    <>
+      <BuildStatusBadge
+        href="https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ATests"
+        src="https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg"
+        alt="Deploy"
+      />
+      <p>Updates every 5 seconds (default).</p>
+      <pre>{`<BuildStatusBadge
   href="https://github.com/justinmahar/react-build-status-badge/actions?query=workflow%3ATests"
   src="https://github.com/justinmahar/react-build-status-badge/workflows/Deploy/badge.svg"
   alt="Deploy"
 />
-`}</pre>
-  </>
-);
-UsingPropsStory.story = {
-  name: 'Using Props',
+  `}</pre>
+    </>
+  ),
 };
