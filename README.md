@@ -19,13 +19,13 @@
 
 Read the **[official documentation](https://justinmahar.github.io/react-build-status-badge/)**.
 
-<a href="https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--page#using-markdown-image-link"><img src="https://justinmahar.github.io/react-build-status-badge/demo.gif" /></a>
+<a href="https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--docs#using-markdown-image-link"><img src="https://justinmahar.github.io/react-build-status-badge/demo.gif" /></a>
 
-👁️ **[Live Demo](https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--page#using-markdown-image-link)**
+👁️ **[Live Demo](https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--docs#using-markdown-image-link)**
 
 ## Overview
 
-[BuildStatusBadge](https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--page) is a React component that allows you to put a real-time build status badge on your site.
+[BuildStatusBadge](https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--docs) is a React component that allows you to put a real-time build status badge on your site.
 
 The badge automatically updates as the status changes—no clearing the cache or refreshing the page required.
 
@@ -86,7 +86,7 @@ The easiest way is to simply paste in your badge Markdown image link, like so:
 </BuildStatusBadge>
 ```
 
-See the [BuildStatusBadge docs](https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--page) for additional methods and options.
+See the [BuildStatusBadge docs](https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--docs) for additional methods and options.
 
 <!-- [lock:typescript] 🚫--------------------------------------- -->
 
@@ -122,4 +122,4 @@ If you found this project helpful, let the community know by giving it a [star](
 
 ## License
 
-See [LICENSE.md](https://justinmahar.github.io/react-build-status-badge/?path=/story/license--page).
+See [LICENSE.md](https://justinmahar.github.io/react-build-status-badge/?path=/docs/license--docs).
