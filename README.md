@@ -19,9 +19,9 @@
 
 Read the **[official documentation](https://justinmahar.github.io/react-build-status-badge/)**.
 
-<a href="https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--docs#using-markdown-image-link"><img src="https://justinmahar.github.io/react-build-status-badge/demo.gif" /></a>
+<a href="https://justinmahar.github.io/react-build-status-badge/?path=/story/stories-buildstatusbadge--markdown-link-story"><img src="https://justinmahar.github.io/react-build-status-badge/demo.gif" /></a>
 
-👁️ **[Live Demo](https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--docs#using-markdown-image-link)**
+👁️ **[Live Demo](https://justinmahar.github.io/react-build-status-badge/?path=/story/stories-buildstatusbadge--markdown-link-story)**
 
 ## Overview
 

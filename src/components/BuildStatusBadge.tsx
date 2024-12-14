@@ -31,7 +31,13 @@ export interface BuildStatusBadgeProps {
  *
  * See the [props section](https://justinmahar.github.io/react-build-status-badge/?path=/story/components-buildstatusbadge--docs#props) for more options.
  */
-export function BuildStatusBadge(props: BuildStatusBadgeProps): JSX.Element {
+export function BuildStatusBadge({
+  interval = 5000,
+  reloadDisabled = false,
+  linkDisabled = false,
+  openInNewWindow = false,
+  ...props
+}: BuildStatusBadgeProps): JSX.Element {
   let href = props.href;
   let src = props.src;
   let alt = props.alt;
@@ -64,11 +70,11 @@ export function BuildStatusBadge(props: BuildStatusBadgeProps): JSX.Element {
     }
   }
 
-  const useLink = !props.linkDisabled && typeof href !== 'undefined';
+  const useLink = !linkDisabled && typeof href !== 'undefined';
 
-  const imageElement = !props.reloadDisabled ? (
+  const imageElement = !reloadDisabled ? (
     <TimedImage
-      interval={typeof props.interval === 'number' && props.interval > 0 ? Math.abs(props.interval) : 5000}
+      interval={typeof interval === 'number' && interval > 0 ? Math.abs(interval) : 5000}
       src={src}
       alt={alt}
     />
@@ -77,7 +83,7 @@ export function BuildStatusBadge(props: BuildStatusBadgeProps): JSX.Element {
   );
 
   if (useLink) {
-    const newWindowProps = props.openInNewWindow ? { target: '_blank', rel: 'noopener noreferrer' } : {};
+    const newWindowProps = openInNewWindow ? { target: '_blank', rel: 'noopener noreferrer' } : {};
     return (
       <a href={href} {...newWindowProps}>
         {imageElement}
@@ -87,10 +93,3 @@ export function BuildStatusBadge(props: BuildStatusBadgeProps): JSX.Element {
     return imageElement;
   }
 }
-
-BuildStatusBadge.defaultProps = {
-  interval: 5000,
-  reloadDisabled: false,
-  linkDisabled: false,
-  openInNewWindow: false,
-};
